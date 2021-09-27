@@ -1,0 +1,21 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="Age <= 0.5\nentropy = 0.98\nsamples = 12\nvalue = [5, 7]\nclass = Yes", fillcolor="#399de549"] ;
+1 [label="Gender <= 0.5\nentropy = 0.811\nsamples = 4\nvalue = [3, 1]\nclass = No", fillcolor="#e58139aa"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="entropy = 0.0\nsamples = 3\nvalue = [3, 0]\nclass = No", fillcolor="#e58139ff"] ;
+1 -> 2 ;
+3 [label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = Yes", fillcolor="#399de5ff"] ;
+1 -> 3 ;
+4 [label="Marital Status <= 0.5\nentropy = 0.811\nsamples = 8\nvalue = [2, 6]\nclass = Yes", fillcolor="#399de5aa"] ;
+0 -> 4 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+5 [label="entropy = 0.0\nsamples = 5\nvalue = [0, 5]\nclass = Yes", fillcolor="#399de5ff"] ;
+4 -> 5 ;
+6 [label="Age <= 1.5\nentropy = 0.918\nsamples = 3\nvalue = [2, 1]\nclass = No", fillcolor="#e581397f"] ;
+4 -> 6 ;
+7 [label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = Yes", fillcolor="#399de5ff"] ;
+6 -> 7 ;
+8 [label="entropy = 0.0\nsamples = 2\nvalue = [2, 0]\nclass = No", fillcolor="#e58139ff"] ;
+6 -> 8 ;
+}
